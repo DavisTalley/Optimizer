@@ -1,10 +1,8 @@
 $(document).ready(function () {
     $("#output").hide();
-    
-    $('#ex1').slider({
-        formatter: function (value) {
-            return 'Current value: ' + value;
-        }
+
+    $('.slider').slider({
+        reversed : true
     });
 
     $("#output-header").on("click", function () {

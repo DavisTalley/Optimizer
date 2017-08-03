@@ -32,9 +32,11 @@ h2:hover {
 .current:hover {
     color: black;
 }
-#ex1Slider .slider-selection {
-	background: #BABABA;
-}
-a:hover {
+#input-header, #output-header {
     text-decoration: none;
+    cursor: pointer;
+}
+.lock {
+    display: table;
+    text-align: center;
 }
