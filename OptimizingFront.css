@@ -32,3 +32,6 @@ h2:hover {
 .current:hover {
     color: black;
 }
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
