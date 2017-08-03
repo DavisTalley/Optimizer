@@ -35,3 +35,6 @@ h2:hover {
 #ex1Slider .slider-selection {
 	background: #BABABA;
 }
+a:hover {
+    text-decoration: none;
+}

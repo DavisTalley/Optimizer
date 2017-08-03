@@ -1,0 +1,137 @@
+<head>
+    <title> BLOX - Optimization </title>
+    <!-- load and implement css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css"
+        integrity="sha256-qxOBz0Std9dtkon+cnUi5A7HTHO0CLbp9DnkxsJuIXc=" crossorigin="anonymous" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <!-- load and implement jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js" integrity="sha256-3nkG8q6ajh1K1fHC3hi142DykXlM5TA2xX3OzP/NNJM="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVIGATION -->
+        <h1 class="text-center"> Optimizer </h1>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h2 id="input-header"> Input </h2>
+            </div>
+            <div class="col-md-6">
+                <h2 id="output-header"> Output </h2>
+            </div>
+        </div>
+
+        <!-- INPUT -->
+        <div id="input">
+            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
+            />
+        </div>
+
+        <!-- OUTPUT -->
+        <div id="output">
+            <div class="container">
+                <div class="col-sm-3">
+                    <h3> Revenue </h3>
+                    </br>
+                    <h3> Costs </h3>
+                    </br>
+                    <h2 class="output"> Profit </h2>
+                </div>
+                <div class="col-sm-9">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <th>Bathroom 1</th>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                        </tr>
+                        <tr>
+                            <th>Bathroom 2</th>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                        </tr>
+                        <tr>
+                            <th>Headwall</th>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                        </tr>
+                        <tr>
+                            <th>Footwall</th>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <th>Sinkwall</th>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
