@@ -2,41 +2,24 @@ body {
     background-color: #1A1A1A;
     color: #AEAEAE;
 }
-
-h1 {
-    color: #F5F5F5;
-}
-
-h2 {
-    color: #AEAEAE
-}
-
-h2,
-h3 {
-    padding: 10px;
-}
-
 .output {
     color: green;
 }
-
-h2:hover {
-    color: white;
-}
-
-.current {
-    background-color: white;
-    border-radius: 5px;
-}
-
-.current:hover {
-    color: black;
-}
-#input-header, #output-header {
+#input-header:hover, #output-header:hover {
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
-.lock {
-    display: table;
-    text-align: center;
+.row > i  {
+    cursor: pointer;
+}
+.slider {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.nav {
+    margin: 3%
+}
+.nav > h1 {
+    color: #F5F5F5;
 }
