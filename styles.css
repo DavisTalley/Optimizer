@@ -1,0 +1,25 @@
+body {
+    background-color: #1A1A1A;
+    color: #AEAEAE;
+}
+.output {
+    color: green;
+}
+#input-header:hover, #output-header:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.row > i  {
+    cursor: pointer;
+}
+.slider {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.nav {
+    margin: 3%
+}
+.nav > h1 {
+    color: #F5F5F5;
+}
