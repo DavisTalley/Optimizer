@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $('.slider').slider({
         reversed: true,
-        tooltip: 'hide'
+        tooltip: 'always'
     });
 
     var inputs = ['br1', 'br2', 'hw1', 'hw2', 'fw', 'sw', 'cs', 'mep', 'ub1', 'ub2'];

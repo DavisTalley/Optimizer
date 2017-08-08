@@ -23,3 +23,6 @@ body {
 .nav > h1 {
     color: #F5F5F5;
 }
+.row {
+    margin-bottom: 3%;
+}
