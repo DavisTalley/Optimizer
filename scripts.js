@@ -57,13 +57,13 @@ $(document).ready(function () {
         display += '<div class="row">';
         display += '<div class="col-md-2">' + p.name + '</div>';
         display += '<div class="col-md-2"><input type="date" style="max-width:90%;"></div>';
-        display += '<div class="col-md-1">' + p.BR + '</div>';
-        display += '<div class="col-md-1">' + p.HW + '</div>';
-        display += '<div class="col-md-1">' + p.FW + '</div>';
-        display += '<div class="col-md-1">' + p.SW + '</div>';
-        display += '<div class="col-md-1">' + p.CS + '</div>';
-        display += '<div class="col-md-1">' + p.MEP + '</div>';
-        display += '<div class="col-md-1">' + p.UB + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.BR + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.HW + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.FW + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.SW + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.CS + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.MEP + '</div>';
+        display += '<div class="col-md-1 text-center">' + p.UB + '</div>';
         display += '</div>';
 
         $(display).appendTo("#projects");
