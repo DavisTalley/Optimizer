@@ -9,10 +9,6 @@ $(document).ready(function () {
     var inputs = ['br1', 'br2', 'hw1', 'hw2', 'fw', 'sw', 'cs', 'mep', 'ub1', 'ub2'];
 
     inputs.forEach(function (input) {
-
-        $("#" + input + "-slider").on("change", function (slideEvt) {
-            $("#" + input + "-count").text(slideEvt.value.newValue);
-        })
         $("#" + input + "-lock").on("click", function () {
             if ($("#" + input + "-slider").slider('isEnabled')) {
                 $("#" + input + "-lock").html('<i class="fa fa-lock"></i>');
@@ -67,6 +63,35 @@ $(document).ready(function () {
         display += '</div>';
 
         $(display).appendTo("#projects");
+    });
+
+    $('#output-table td').each(function () {
+        var cellValue = $(this).html();
+
+        if (cellValue == 0) {
+            $(this).css("background-color", "#FFB8B8");
+            $(this).css("color", "#1A1A1A");
+        }
+        else if (cellValue <= .2) {
+            $(this).css("background-color", "#FA9494");
+            $(this).css("color", "#1A1A1A");
+        }
+        else if (cellValue <= .5) {
+            $(this).css("background-color", "#D26161");
+            $(this).css("color", "#1A1A1A");
+        }
+        else if (cellValue <= 1) {
+            $(this).css("background-color", "#AA3939");
+        }
+        else if (cellValue <= 2) {
+            $(this).css("background-color", "#821A1A");
+        }
+        else if (cellValue <= 3) {
+            $(this).css("background-color", "#5A0707");
+        }
+        else {
+            $(this).css("background-color", "#3E0000");
+        }
     })
 
     $("#output-header").on("click", function () {

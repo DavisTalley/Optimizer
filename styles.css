@@ -1,6 +1,8 @@
 body {
     background-color: #1A1A1A;
     color: #AEAEAE;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 .output {
     color: green;
@@ -25,4 +27,13 @@ body {
 }
 .row {
     margin-bottom: 3%;
+}
+#people-table {
+    margin-top: 10%;
+}
+#projects-table {
+    margin-top: 10%;
+}
+.column-heading {
+    font-weight: 700;
 }
