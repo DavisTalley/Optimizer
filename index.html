@@ -1,17 +1,13 @@
 <head>
     <title> BLOX - Optimization </title>
     <!-- load and implement css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css"
-        integrity="sha256-qxOBz0Std9dtkon+cnUi5A7HTHO0CLbp9DnkxsJuIXc=" crossorigin="anonymous" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" integrity="sha256-qxOBz0Std9dtkon+cnUi5A7HTHO0CLbp9DnkxsJuIXc=" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="styles.css" type="text/css" rel="stylesheet" />
     <!-- load and implement jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js" integrity="sha256-3nkG8q6ajh1K1fHC3hi142DykXlM5TA2xX3OzP/NNJM="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js" integrity="sha256-3nkG8q6ajh1K1fHC3hi142DykXlM5TA2xX3OzP/NNJM=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 
@@ -33,7 +29,8 @@
         <!-- INPUT -->
         <div id="input">
             <div class="row">
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 text-center">
                     <div class="form-group">
                         <label for="min-revenue">Minimum Revenue</label>
                         <div class="input-group">
@@ -42,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <div class="form-group" id="min-date">
                         <label for="min-date">Have Revenue By</label>
                         <input type="date" class="form-control" id="min-input">
@@ -56,8 +53,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="br1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="br1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>BR1</label>
@@ -70,8 +66,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="br2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="br2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>BR2</label>
@@ -84,8 +79,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="hw1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="hw1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>HW1</label>
@@ -98,8 +92,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="hw2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="hw2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>HW2</label>
@@ -112,8 +105,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="fw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="fw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>FW</label>
@@ -126,8 +118,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="sw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="sw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>SW</label>
@@ -140,8 +131,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="cs-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="cs-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>CS</label>
@@ -154,8 +144,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="mep-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="mep-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>MEP</label>
@@ -168,8 +157,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="ub1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="ub1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>UB1</label>
@@ -182,8 +170,7 @@
                             <i class="fa fa-unlock-alt"></i>
                         </div>
                         <div class="row">
-                            <input class="slider" id="ub2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1"
-                                data-slider-orientation="vertical" />
+                            <input class="slider" id="ub2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
                         </div>
                         <div class="row">
                             <label>UB2</label>
