@@ -1,0 +1,382 @@
+<head>
+    <title> BLOX - Optimization </title>
+    <!-- load and implement css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" integrity="sha256-qxOBz0Std9dtkon+cnUi5A7HTHO0CLbp9DnkxsJuIXc=" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <!-- load and implement jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js" integrity="sha256-3nkG8q6ajh1K1fHC3hi142DykXlM5TA2xX3OzP/NNJM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVIGATION -->
+        <div class="nav">
+            <h1 class="text-center"> Optimizer </h1>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h2 id="input-header"> Input </h2>
+                </div>
+                <div class="col-md-6">
+                    <h2 id="output-header"> Output </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- INPUT -->
+        <div id="input">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 text-center">
+                    <div class="form-group">
+                        <label for="min-revenue">Minimum Revenue</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="currency-icon">$</span>
+                            <input type="text" class="form-control" aria-describedby="currency-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="form-group" id="min-date">
+                        <label for="min-date">Have Revenue By</label>
+                        <input type="date" class="form-control" id="min-input">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1">
+                    <div class=" text-center">
+                        <div class="row" id="br1-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="br1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>BR1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="br2-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="br2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>BR2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="hw1-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="hw1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>HW1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="hw2-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="hw2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>HW2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="fw-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="fw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>FW</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="sw-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="sw-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>SW</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="cs-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="cs-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>CS</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="mep-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="mep-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>MEP</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="ub1-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="ub1-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>UB1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" text-center">
+                        <div class="row" id="ub2-lock">
+                            <i class="fa fa-unlock-alt"></i>
+                        </div>
+                        <div class="row">
+                            <input class="slider" id="ub2-slider" type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="1" data-slider-orientation="vertical" />
+                        </div>
+                        <div class="row">
+                            <label>UB2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" id="people-table">
+                <div class="col-md-1 column-heading">Available</div>
+                <div class="col-md-1 column-heading" style="padding-left:5px;">Unavailable</div>
+                <div class="col-md-1 column-heading">Absent</div>
+                <div class="col-md-4 column-heading">Name</div>
+                <div class="col-md-5 column-heading">Skills</div>
+            </div>
+            <hr />
+            <div id="people">
+            </div>
+            <br />
+            <div class="row" id="projects-table">
+                <div class="col-md-2 column-heading">Projects</div>
+                <div class="col-md-2 column-heading">Ship Date</div>
+                <div class="col-md-1 text-center column-heading">BR</div>
+                <div class="col-md-1 text-center column-heading">HW</div>
+                <div class="col-md-1 text-center column-heading">FW</div>
+                <div class="col-md-1 text-center column-heading">SW</div>
+                <div class="col-md-1 text-center column-heading">CS</div>
+                <div class="col-md-1 text-center column-heading">MEP</div>
+                <div class="col-md-1 text-center column-heading">UB</div>
+            </div>
+            <hr />
+            <div id="projects">
+            </div>
+        </div>
+
+        <!-- OUTPUT -->
+        <div id="output">
+            <div class="container">
+                <div class="col-sm-3">
+                    <h3> Revenue </h3>
+                    </br>
+                    <h3> Costs </h3>
+                    </br>
+                    <h2 class="output"> Profit </h2>
+                </div>
+                <div class="col-sm-9">
+                    <table class="table table-bordered" id="output-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <th>Bathroom 1</th>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                        </tr>
+                        <tr>
+                            <th>Bathroom 2</th>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                            <td> 3 </td>
+                        </tr>
+                        <tr>
+                            <th>Headwall 1</th>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                        </tr>
+                        <tr>
+                            <th>Headwall 2</th>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                            <td> 2 </td>
+                        </tr>
+                        <tr>
+                            <th>Footwall</th>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <th>Sinkwall</th>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <th>Chart Station</th>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 1 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <th>MEP</th>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                            <td> .5 </td>
+                        </tr>
+                        <tr>
+                            <th>Uber 1</th>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                        </tr>
+                        <tr>
+                            <th>Uber 2</th>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                            <td> .2 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
